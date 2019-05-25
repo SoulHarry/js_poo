@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body{
+            background: #fffbd5;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        };
+    </style>
+    <title>Aplicación producto</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a href="/" class="navbar-brand">Aplicacion producto</a>
+    </nav>
+    <div class="container">
+        <div id="app" class="row pt-5">
+           <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+
+                    </div>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nombre del producto" />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" step="0.01" class="form-control" name="price" id="price" placeholder="Precio producto" />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="year" id="year" placeholder="Año del producto" />
+                        </div>
+                        <input type="submit" value="Guardar" class="btn btn-primary btn-block" />
+                    </form>
+                </div>
+           </div>
+           <div id="product-list" class="col-md-8">
+               
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
